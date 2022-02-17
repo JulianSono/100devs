@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ----- NAVIGATION-----  */
+
+nav img {
+  width: 10%;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  padding-bottom: 10px;
+}
+.menu {
+  width: 35px;
+  margin-left: auto;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* ----- HEADLINES----- */
+
+
+.latest {
+  padding: 0 20px 15px 20px;
+  margin-top: 50px;
+}
+
+main h1 {
+  line-height: 30px;
+}
+aside {
+  margin: 0;
+}
+
+/* LATEST ARTICLES */
+figure{
+    margin: 0;
+}
+
+
+
+
+.latest-pic {
+  margin: 0;
+  text-align: center;
+}
+
+
+.latest-a > p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.feature-title {
+  font-size: large;
+  font-weight: bold;
+  color: limegreen;
+  margin-bottom: 0;
+}
+
+.latest-a-h {
+  margin-top: 15px;
+  margin-bottom: 9px;
+  font-size: 1.3em;
+}
+.latest-a-h-p {
+  margin: 0;
+}
+.latest-a-h-p + p {
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
+/*  MAIN and LATEST */
+
+
+@media (max-width:549px) {
+
+  menu{
+    display: none;
+  }
+
+  .latest-pic img{
+width: 100%;
+  }
+summary{
+  display: none;
+}
+
+
+}
+
+
+@media (min-width: 550px) {
+
+  menu{
+    display: none;
+  }
+
+
+  main {
+    display: flex;
+    
+    
+  }
+  main div {
+    padding-right: 10px;
+  }
+  main div img {
+    width: 80%;
+  }
+
+  aside {
+    width: 110%;
+
+  }
+  aside h3 {
+    font-size: 1em;
+  }
+
+  summary{
+      display: none;
+  }
+
+  figure img{
+    width:100%;
+}
+}
+
+@media (min-width:850px) {
+
+
+ .latest-a {
+     display: flex;
+     padding-right: 10px;
+     height: auto;
+    
+
+ }
+
+ .latest-pic{
+     order: 1;
+
+ }
+
+
+ summary{
+     
+     padding-bottom: 20px;
+     display: inline-block;
+     order: 1;
+     width: 70%;
+    
+ }
+
+
+
+ .latest-article{
+    width: 50%;
+ }
+
+ .latest-summary-a{
+     padding: 0 10px 10px;
+ }
+
+.latest-summary-a-b{
+    width: 90%;
+    padding: 0 10px 10px;
+}
+.latest-article-b{
+    width: 100%;
+}
+}
+
+
+@media (min-width:1100px) {
+
+  menu{
+    display: inline-block;
+    padding: 0;
+  }
+
+  nav{
+    display: none;
+  }
+
+.separte{
+  margin-left: 25px;
+}
+  .supermain{
+    display: flex;
+
+  }
+  .supermain ul{
+    padding: 0;
+  }
+  
+  .supermain ul li{
+    list-style: none;
+    padding: 5px;
+
+
+  }
+  .supermain ul li a{
+    text-decoration: none;
+  color: hsl(212, 10%, 38%)
+
+ 
+  }
+
+  .li-padding{
+    padding-top: 20px;
+  }
+
+main{
+  background: rgb(54,9,121);
+  background: linear-gradient(345deg, rgba(54,9,121,0) 50%, rgba(0,212,255,1) 50%);
+}
+}
